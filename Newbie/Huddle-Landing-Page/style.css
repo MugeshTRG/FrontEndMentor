@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+h1,
+h2 {
+  font-weight: 600;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.703);
+  padding: 1.25rem 1.75rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.title img {
+  margin-right: 0.5rem;
+}
+
+.mockup img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mockup {
+  margin: 2rem 0;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  color: hsl(257, 40%, 49%);
+  padding: 1em 6em;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  font-size: 0.9em;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: hsl(0, 0%, 100%);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.icons-svg {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  width: 2rem;
+}
+
+.icons-svg:hover {
+  filter: brightness(0) saturate(100%) invert(87%) sepia(47%) saturate(5930%)
+    hue-rotate(255deg) brightness(96%) contrast(89%);
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  p {
+    padding: 1rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .mockup {
+    flex: 1;
+  }
+  .description {
+    text-align: left;
+    flex: 1;
+  }
+  footer {
+    justify-content: flex-end;
+  }
+}

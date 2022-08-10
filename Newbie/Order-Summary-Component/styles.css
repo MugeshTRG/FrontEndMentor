@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --bright-blue: hsl(245, 75%, 52%);
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  position: relative;
+}
+
+#bg-wave {
+  top: 0;
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+h1,
+p,
+div,
+span,
+button {
+  font-size: 1.6rem;
+}
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 40rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#card-img {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.text-part {
+  background-color: var(--very-pale-blue);
+  text-align: center;
+  padding: 7%;
+}
+.title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--dark-blue);
+}
+.subtitle {
+  font-size: 1.6rem;
+  color: var(--desaturated-blue);
+  margin-bottom: 2rem;
+}
+
+.price-container {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  border-radius: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 2.5rem;
+}
+.price-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.price-desc {
+  margin-left: 1.2rem;
+}
+.price-desc h5 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+.price-desc p {
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  font-size: 1.4rem;
+}
+.change-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+.proceed-btn {
+  display: block;
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+.cancel-btn {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.change-text:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.644);
+}
+.proceed-btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.644);
+}
+.cancel-btn:hover {
+  color: black;
+}
+
+@media screen and (max-width: 426px) {
+  .card {
+    max-width: 87%;
+  }
+  .proceed-btn,
+  .cancel-btn,
+  .change-text {
+    font-size: 1.3rem;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+  .text-part {
+    padding: 9% 7%;
+  }
+  .price-desc {
+    margin-left: 1rem;
+  }
+}

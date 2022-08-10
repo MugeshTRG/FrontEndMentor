@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: hsl(203, 44%, 93%);
+  position: relative;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  max-width: 60%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "one one"
+    "two three";
+}
+.box-one p {
+  font-weight: 500;
+  line-height: 2rem;
+}
+.box-three p,
+.box-two p {
+  color: hsla(203, 44%, 93%, 0.856);
+  font-weight: 400;
+  line-height: 2rem;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+}
+.flex-p {
+  display: flex;
+  align-items: center;
+}
+span {
+  margin-right: 1rem;
+}
+.grid {
+  padding: 2rem;
+}
+
+.box-one {
+  background-color: white;
+  grid-area: one;
+}
+
+.box-two {
+  background-color: hsl(179, 62%, 43%);
+  grid-area: two;
+}
+.box-three {
+  background-color: hsla(179, 62%, 43%, 0.89);
+  grid-area: three;
+}
+h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.5rem;
+}
+.box-one p {
+  color: hsl(218, 22%, 67%);
+}
+.dollar {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cta {
+  width: 100%;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  font-family: "Karla", sans-serif;
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 8rem;
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+}

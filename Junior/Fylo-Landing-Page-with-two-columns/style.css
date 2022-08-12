@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  font-weight: 600;
+  padding: 1rem 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+
+nav {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.link-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.main-page {
+  padding: 0rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex: 1;
+  margin-bottom: 5rem;
+}
+
+.left-main {
+  margin-top: -7rem;
+}
+
+.main-page img {
+  width: 100%;
+}
+
+.title {
+  line-height: 1.5;
+  font-size: 2.2rem;
+  max-width: 80%;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 1rem 0rem;
+  max-width: 75%;
+}
+
+.main-page input {
+  padding: 0.9rem;
+  width: 20rem;
+}
+
+.input-btn-div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.second-part {
+  display: flex;
+  padding: 2rem 0rem;
+  margin-bottom: 5rem;
+  padding: 0rem 4rem;
+}
+
+.right-second img {
+  width: 100%;
+}
+
+.left-second h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.left-second p {
+  padding: 0.5rem 0rem;
+}
+
+.desc {
+  max-width: 75%;
+}
+
+.fylo-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  color: hsl(170, 45%, 43%);
+  cursor: pointer;
+}
+
+.testimonial-box {
+  max-width: 52%;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.075);
+}
+
+.avatar-div {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.avatar-text p {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.avatar-div img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.third-part {
+  background-color: hsl(239, 22%, 44%);
+  padding: 5rem 4rem;
+  display: flex;
+  color: hsl(240, 75%, 98%);
+}
+
+.third-text h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.third-text p {
+  max-width: 50%;
+  color: hsl(0, 0%, 75%);
+  font-weight: 400;
+}
+
+.btn-email {
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+}
+
+#email-two {
+  padding: 0.7rem 2rem;
+  width: 30rem;
+}
+
+footer {
+  padding: 7rem 4rem 2rem;
+  background-color: hsl(243, 87%, 12%);
+}
+
+.credentials,
+.links,
+.footer-icons > img {
+  cursor: pointer;
+}
+
+.credentials > div > span:hover,
+.links > span:hover {
+  color: hsl(238, 22%, 44%);
+}
+
+.footer-icons > img:hover {
+  filter: invert(36%) sepia(10%) saturate(1678%) hue-rotate(201deg)
+    brightness(95%) contrast(93%);
+}
+
+.flogo {
+  filter: brightness(0) invert(1);
+}
+
+.footer-links {
+  color: hsl(240, 75%, 98%);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-right: 5rem;
+}
+.footer-icons img {
+  padding: 0.3rem;
+  filter: brightness(0) invert(1);
+  border: 1px solid hsl(240, 75%, 98%);
+  border-radius: 50%;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.credentials > div > img {
+  margin-right: 1rem;
+}
+
+.credentials > div {
+  display: flex;
+}
+
+.footer-links {
+  padding: 1.5rem 0rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1.5rem;
+  }
+  nav img {
+    width: 30%;
+  }
+  #email {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  .link-div {
+    gap: 2rem;
+  }
+  .input-btn-div {
+    margin-top: -4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title,
+  .subtitle,
+  .testimonial-box,
+  .third-text p {
+    max-width: 100%;
+  }
+  .main-page {
+    flex-direction: column-reverse;
+    gap: 7.5rem;
+  }
+  .second-part {
+    flex-direction: column-reverse;
+  }
+  .left-second h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .left-second p {
+    padding: 0.5rem 0rem;
+  }
+
+  .desc {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+  .third-part,
+  .footer-links,
+  .footer-image {
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .btn-email,
+  #email-two {
+    display: block;
+    width: 100%;
+  }
+}
